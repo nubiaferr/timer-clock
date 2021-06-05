@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap');
+
+:root{
+  --primary-color: rgb(17, 86, 102);
+  --secondary-color: grey;
+  --clock-bg: #1c531ce7;
+  --background-color: black;
+  --shadow: rgb(82, 81, 81);
+  --background-alt: #383636;
+  --font: white;
+  --font-alt: rgb(105, 8, 8);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  width: 33.75rem;
+  height: 33.75rem;
+  margin: 3.125rem auto;
+  background: var(--background-color);
+  padding: 1.25rem;
+  border-radius: 50%;
+  border: 1.25rem solid var(--secondary-color);
+  box-shadow: 0rem 0rem 1.25rem 0.625rem var(--background-color);
+}
+
+.container-content{
+  text-align: center;
+  margin-top: 25%;
+  margin-bottom: 25%;
+}
+
+h1{
+  font-size: 5rem;
+  margin: 0;
+  color: var(--font);
+}
+
+.relogio-bg{
+  height: 4.5rem;
+  background-color: var(--clock-bg);
+  box-shadow: 0rem 0rem 0rem 0.2rem  var(--shadow);
+}
+
+.relogio {
+  font-size: 3.5rem;
+  font-family: 'Press Start 2P', cursive;
+  position: relative;
+  top: 1.5rem;
+}
+
+.pausado {
+  color:var(--font-alt);
+}
+
+
+button{
+  width: 7rem;
+  height: 3rem;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;  
+  background-color: var(--secondary-color);
+  box-shadow: 0rem 0rem 0rem 0.2rem var(--shadow);
+}
+
+button:hover{
+  background-color: var(--background-alt);
+  transition: ease-in-out 100ms;
+}
+
+button:focus, footer a:hover{
+  color: var(--font);
+  background-color: var(--background-color);
+}
+
+footer{
+  text-align: center;
+}
+
+footer a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+@media  (max-width: 800px) {
+  .container{
+    max-width: 21.875rem;
+    height: 21.875rem;
+    margin-top: 25%;
+    margin-bottom: 25%;
+    border: 15px solid var(--secondary-color);
+  }
+
+  .container-content{
+    margin-top: 25%;
+    margin-bottom: 25%;
+  }
+
+  .relogio {
+    position: relative;
+    top: 0.8rem;
+    font-size: 2rem;
+  }
+  
+  .relogio-bg{
+    height: 3rem;
+    width: 100%;
+  }
+  
+  h1{
+    font-size: 3rem;
+    margin-bottom: -1rem;
+  }
+
+  button{
+    width: 4.5rem;
+    height: 2.5rem;    
+    font-size: 1.5rem;  
+  }
+}
